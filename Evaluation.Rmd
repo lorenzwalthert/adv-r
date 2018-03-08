@@ -437,7 +437,7 @@ Almost all quoting functions should capture quosures rather than expressions, an
 
     ```{r}
     base <- 2
-    quo(log(x, base = base))
+    quo(log(x, base = !!base))
     ```
     
     You could create this self-contained expression:
